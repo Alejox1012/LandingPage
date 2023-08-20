@@ -1,0 +1,430 @@
+/*PONER ESTATICO EL ENCABEZADO*/
+header {
+    position: sticky;
+    top: 0;
+    width: 102%;
+    background-color: #ffffff;
+    z-index: 9999;
+  }
+  header + * {
+    margin-top: -30px; /* Ajusta el valor según sea necesario */
+  }
+  
+  /*PARTE LOGO*/
+  
+  .encabezado{
+    text-align: left;
+  }
+  .encabezado img {
+    width: 130px;
+    padding-left: 100px;
+  }
+  
+  /*BARRA DE NAVEGACION*/
+  .menu {
+   background-color: #000000;
+    padding: 20px;
+    width: 95.4%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+  }
+  .menu a {
+    padding:12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  .menu a:hover {
+     background-color: #ffffff;
+     color: #5100FF;
+  }
+  
+  /*PRIMERA PAGINA-ABRE BOCAS*/
+  
+  .bienvenida {
+    background-image: url("https://res.cloudinary.com/dyxudpchn/image/upload/v1689576348/Landingpage/imgs/13195801_17Z_2102.w026.n002.164B.p1.164_rdf4kq.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    height: 130vh;
+    width: 100%;
+  }
+  .bienvenida h1 {
+     font-weight: bold;
+    font-family: Arial;
+    display: flex;
+   
+    justify-content: left;
+    padding-left: 150px;
+    padding-top: 180px;
+    font-size: 40px; 
+    color: #ffffff;
+  }
+  .bienvenida p {
+     font-weight: bold;
+    font-family: Arial;
+    display: flex;
+   
+    justify-content: left;
+    padding-left: 150px;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .bienvenida button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .bienvenida button:first-of-type {
+    margin-left: 180px;
+  }
+  .bienvenida button:hover {
+    background-color: #7c9ce4;
+    color: #ffffff;
+  }
+  
+  /*SEGUNDA PAGINA-JUEGO*/
+  .juego{
+     background-color:#000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:70vh;
+    width: 100%;
+     display: flex;
+  }
+  .letra{
+    text-align: left;
+    display: flex;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  .video{
+    align-items: center;
+    display: flex;
+     margin-left: auto;
+    padding-right: 300px;
+  }
+  .letra{
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    padding-left: 200px;
+    color: #ffffff;
+  }
+  .cross-list {
+    list-style-type: none; /* Quita la viñeta predeterminada */
+    text-align: center;
+  }
+  .cross-list li {
+    padding-bottom: 10px; /* Espacio interno inferior */
+  }
+  .cross-list li::before {
+    content: "✖"; /* Define el contenido del pseudo-elemento ::before */
+    margin-right: 10px; /* Opcional: Agrega un espacio entre la cruz y el texto */
+  }
+  
+  /*TERCERA PAGINA-SUSCRIPCION*/
+  .suscripcion{
+    
+    background-color:#4c3d81;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130vh;
+    width: 98.6%;
+     display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #ffffff;
+   
+  }
+  .formulario {
+    text-align: left;
+    display: flex;
+  align-items: center;
+   padding-left: 5px;
+    font-size: 15px;
+    color: #000000;
+    font-family: Arial;
+     font-weight: bold;
+     max-width: 400px;/* Ajusta el tamaño máximo del formulario según tus preferencias */
+    margin: 0 auto;
+  }
+  .suscripcion button {
+    margin-top: 10px;
+    padding: 15px 25px;
+    border-radius: 6px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+     border: none;
+  }
+  .suscripcion button:first-of-type {
+    margin-left: 660px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .suscripcion button:hover {
+    background-color: #7c9ce4;
+    color: #ffffff;
+    
+  }
+  .formulario fieldset {
+   border-color:#fff;
+    border-radius: 10px;
+    padding: 20px;
+     background-color: #fff;
+     border: none;
+  }
+  .formulario fieldset h1{
+    color: #7c9ce4;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 280px;
+     margin-top: -7px;
+    margin-bottom: 5px;
+  }
+  .formulario input[type="text"],
+  .formulario input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .formulario input[type="text"]::placeholder,
+  .formulario input[type="email"]::placeholder {
+    color: #999;
+    font-size: 14px;
+  }
+  .formulario select {
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    appearance: none;
+    background-color: transparent;
+    background-image: url("path/to/arrow-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  .formulario select option {
+    font-size: 14px;
+    color: #333;
+  }
+  #hola{
+    border-color:#fff;
+    border-radius: 10px;
+    padding: 20px;
+     background-color: #7c9ce4;
+     border: none;
+  }
+  .explicacion {
+    text-align: right;
+    display: flex;
+  align-items: center;
+    padding-right: 20px;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .decoracion {
+  display: flex;
+  align-items: center;
+  }
+  .decoracion img {
+  width: 400px;
+  
+  }
+  
+  /*CUARTA PAGINA-CARRUSEL DE NOTICIAS*/
+  .novedades h1{
+     font-weight: bold;
+    font-family: Arial;
+    display: flex;
+   
+    justify-content: right;
+    padding-right: 50px;
+    padding-top: 10px;
+    font-size: 50px; 
+    color: #000000;
+  }
+  section {
+    display:flex;
+    width:1460px;
+    height:430px;
+  }
+  section img{
+    width:0px;
+    flex-grow:1;
+    object-fit: cover;
+    opacity:.8;
+    transition: .5s ease;
+  }
+  section img:hover{
+    cursor: crosshair;
+    width:300px;
+    opacity:1;
+    filter: contrast(120%);
+  }
+  /*QUINTA PAGINA-RECORDS EN EL JUEGO*/
+  .container {
+    background-color:#7b94e7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .elemento-derecha {
+    margin-left: auto;
+     margin-top: 30px;
+    margin-right: 200px;
+  }
+  .elemento-izquierda {
+   margin-left: 200px;
+    margin-right: auto;
+     font-weight: bold;
+    font-family: 'Arial';
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .elemento-izquierda div{
+    background-color: lightblue;
+    height: 40px;
+    width: 400px;
+    margin: 10px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+  }
+  .elemento-izquierda div:first-of-type{
+    margin-left: -70px;
+    height: 50px;
+    width: 400px;
+     padding-top:5px;
+    padding-bottom:30px;
+    
+  }
+  /*SEXTA PAGINA-RECOMENDACIONES ONLINE*/
+  
+  .slider {
+    aspect-ratio: 14/16;
+    width: 370px;
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin:  auto;
+    padding-top: 100px;
+  }
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    scroll-snap-type: x mandatory; /* Agregado para permitir desplazamiento hacia la izquierda */
+  }
+  .slider img {
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+  }
+  /*FOOTER PAGINA-REDES SOCIALES BLA BLA*/
+  footer{
+     background-color:#fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    height: 10vh;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .logo {
+    margin-bottom: 20px;
+    color:#f1f1f1
+  }
+  .licencias, .redes-sociales, .ubicacion {
+    margin-bottom: 10px;
+  }
+  .redes-sociales ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .redes-sociales ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  .redes-sociales ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .swiper-slide img {
+    height: 400px;
+    width: 98%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+      width: 600px;
+  }
+  
+  #parriba{
+    width: 50px;
+  height: 50px;
+  background-image: url("https://img.icons8.com/?size=512&id=wCWhRj8HjE7s&format=png");
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el botón */
+  background-repeat: no-repeat;
+  background-position: center center; /* Centra la imagen en el botón */
+  border: none; /* Elimina los bordes del botón */
+  cursor: pointer; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
